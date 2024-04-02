@@ -9,8 +9,7 @@ import { cata_data } from './catalog-data';
 export class PetDataService {
 
   private pets: Pet[] = []
-
-  constructor() { 
+  constructor() {
     cata_data.pets.forEach(
       (PetJson: PetJson) => this.pets.push(PetDataService.json_Pet(PetJson)));
   }
