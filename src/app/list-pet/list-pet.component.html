@@ -1,0 +1,19 @@
+<h2>List of Pets</h2>
+
+<table>
+  <tbody>
+  <tr *ngFor="let p of p">
+    <td>
+      <a [routerLink]="['pets',p.id]">
+        <img class="ab" [src]="p.image" [alt]="p.name" height="110px" width="110px">
+      </a>
+    </td>
+    <td>
+      <span class="pet_name">{{p.name}} {{p.petKind}}</span><br>
+      {{p.description}}
+    </td>
+    <td></td>
+  </tr>
+  <tr></tr>
+</tbody>
+</table>

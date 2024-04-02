@@ -1,0 +1,17 @@
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+app-root {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+
+app-root {
+  background-color: #f0f0f0;
+  color: #333;
+  font-family: Arial, sans-serif;
+}

@@ -1,0 +1,27 @@
+
+<ng-container *ngIf="pet !== undefined; else other">
+    <div class="pet">
+      <span class="pet_name">Pet: {{pet.name}} {{pet.petKind}} <br>Breed: {{pet.breed}}</span>
+    </div>
+    
+    <div>
+      <img [src]='pet.image' [alt]='pet.name' class='pet_image'>
+    </div>
+
+    <div class="text_box">
+      {{pet.description}}
+    </div>
+  </ng-container>
+
+  <ng-template #other>
+    <p>
+      Data Not found.
+    </p>
+  </ng-template>
+
+  <br>
+  <button>
+    <a routerLink="/">Back to Pet List</a>
+  </button>
+  
+  
